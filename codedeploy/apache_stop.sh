@@ -1,6 +1,7 @@
 #!/bin/bash
  
 #Stop no servidor web apache2
+a2enmod headers
 service apache2 stop
 if [[ -f /var/www/cloudcamp-backend ]]; then
     echo "Removendo DIR"
